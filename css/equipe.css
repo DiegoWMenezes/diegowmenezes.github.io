@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(68.15deg, #4d4d5a 16.62%, #3b3b47 85.61%);  /*rgba(63, 57, 57, 0.459)*/
+}
+
+header {
+    background: #000000;
+    padding-inline: 16px;
+    padding-bottom: 70px;
+}
+
+/* configuração do nav-bar*/
+nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /*font-size: 48px;
+    color: #fff;
+    padding-top: 50px;*/
+    height: 170px;
+    margin-top: 55px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none; /* tira as bolinhas da lista */
+    padding-top: 50px; /* afasta do topo */
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+}
+
+.nav-list a:hover {
+    color: #c94304;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a > img {
+    height: 180px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    
+    width: 920px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h2 {
+    color: #c94304;
+    font-family: 'Roboto', sans-serif;
+}
+
+.data-post {
+    font-size: 0.8em;
+}
+
+.caixas {
+    width: 960px;
+    float: left;
+    color: #fff;
+    
+}
+
+.caixa-1 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-1 > img {
+    padding: 10px;
+}
+
+.caixa-2 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-2 > img {
+    padding: 10px;
+}
+
+.caixa-3 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-3 > img {
+    padding: 10px;
+}
+
+.caixa-4 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-4 > img {
+    padding: 10px;
+}
+
+.caixa-5 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-5 > img {
+    padding: 10px;
+}
+
+.barra-lateral {
+    width: 245px;
+    float: right;
+    padding-right: 150px;
+    
+}
+
+.caixa-lateral {
+    background-color: #504e4e;
+    width: 140%;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+
+}
+
+.caixa-lateral:last-child {
+    border: none;
+}
+
+.caixa-lateral h3 {
+    background: #c94304;
+    text-align: center;
+
+}
+
+.caixa-lateral h4 {
+    color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+    background: #000;
+}
+
+.caixa-lateral p {
+    padding-top: 3px;
+    color: #fff;
+}
+
+hr {
+    width: 361px;
+}
+
+
+@media only screen and (max-width: 768px) {
+        header {
+            padding-bottom: 20px;
+        }
+    
+        nav {
+            height: auto;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .logo {
+            height: 120px;
+            margin-top: 20px;
+        }
+    
+        .nav-list {
+            flex-direction: row;
+            align-items: center;
+            padding-top: 20px;
+        }
+    
+        .nav-list a {
+            font-size: 16px;
+            padding-block: 12px;
+        }
+    
+        .hamburger {
+            display: block; 
+}
+
+
+.container {
+    width: 80%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.caixas {
+    width: 90%;
+    float: none; 
+    color: #fff;
+}
+
+.caixa-1,
+.caixa-2,
+.caixa-3,
+.caixa-4,
+.caixa-5 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-1 > img,
+.caixa-2 > img,
+.caixa-3 > img,
+.caixa-4 > img,
+.caixa-5 > img {
+    width: 95%; /* Faz com que a imagem ocupe 100% da largura da caixa */
+    height: auto; /* Mantém a proporção da imagem */
+    padding: 10px;
+
+}
+
+.caixa-1 p,
+.caixa-2 p,
+.caixa-3 p,
+.caixa-4 p,
+.caixa-5 p {
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.caixa-1 h2,
+.caixa-2 h2,
+.caixa-3 h2,
+.caixa-4 h2,
+.caixa-5 h2 {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.data-post {
+    font-size: 0.7em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+}

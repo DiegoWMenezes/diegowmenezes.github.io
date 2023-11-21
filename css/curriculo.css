@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #0a080f;
+}
+
+header {
+    background-color: #ffffff00;
+    text-align: center;
+    border-top: 35px solid #00000000;
+}
+
+section {
+    padding: 0;
+    background-color: #ffffff00;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.paragrafo-container {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 45%;
+    text-align:center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.paragrafo-container:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fade2 {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+    
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+
+}
+
+.sobre-mim {
+    margin-top: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #333;
+    height: 100px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.wpp {
+    height: 30px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.wpp:hover {
+    filter: brightness(300%);
+}
+
+.git {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.git:hover {
+    filter: brightness(300%);
+}
+
+.email {
+    height: 30px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.email:hover {
+    filter: brightness(300%);
+}
+
+.imagem-minha-1 {
+    height: 620px;
+    width: 920px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.918);
+    transition: transform 0.2s ease-in-out;
+    animation: fade 1.5s;
+    transition: filter 0.3s ease-in-out;
+}
+
+.imagem-minha-1:hover {
+    filter: brightness(75%);
+}
+
+.imagem-minha-2 {
+    height: 620px;
+    width: 920px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.918);
+    transition: filter 0.3s ease-in-out;
+    animation: fade2 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.imagem-minha-2:hover {
+    filter: brightness(75%);
+}
+
+.imagem-minha-3 {
+    height: 620px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.918);
+    transition: filter 0.3s ease-in-out;
+    animation: fade2 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.imagem-minha-3:hover {
+    filter: brightness(75%);
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0;
+    margin: 45px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 53px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+
+.b1 {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.b2 {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff9f9;
+    letter-spacing: 3px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.b1:hover {
+    color: rgb(0, 0, 0);
+}
+
+.b2:hover {
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 767px) {
+    .paragrafo-container,
+    .sobre-mim,
+    .formacoes-conhecimentos,
+    .jornada-profossional,
+    footer {
+        text-align: center; /* Adicione para centralizar o texto */
+        font-size: 8px;
+    }
+
+    header h1 {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    section img {
+        max-width: 65%;
+        margin: 0 auto; 
+        display: block; 
+    }
+}
