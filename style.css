@@ -213,17 +213,28 @@ body {
     color: var(--accent);
 }
 
-/* Profile Photo */
+/* Data Grid Visual */
 .hero-visual {
     flex-shrink: 0;
+    opacity: 0.6;
 }
 
-.profile-photo {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    object-fit: cover;
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 36px);
+    grid-template-rows: repeat(5, 36px);
+    gap: 4px;
+}
+
+.grid-cell {
     border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.grid-cell.active {
+    background: var(--accent-dim);
+    border-color: var(--accent-border);
 }
 
 /* Sections */
@@ -474,12 +485,7 @@ footer p {
     }
 
     .hero-visual {
-        order: -1;
-    }
-
-    .profile-photo {
-        width: 72px;
-        height: 72px;
+        display: none;
     }
 
     .skills-grid {
