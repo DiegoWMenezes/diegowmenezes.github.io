@@ -219,12 +219,11 @@ body {
 }
 
 .profile-photo {
-    width: 280px;
-    height: 280px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent-border);
-    box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
+    border: 1px solid var(--border);
 }
 
 /* Sections */
@@ -479,8 +478,8 @@ footer p {
     }
 
     .profile-photo {
-        width: 180px;
-        height: 180px;
+        width: 72px;
+        height: 72px;
     }
 
     .skills-grid {
